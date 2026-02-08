@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WiFi Monitor | Kawindu Prabod</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass { background: rgba(30, 58, 138, 0.9); backdrop-filter: blur(10px); }
+    </style>
+</head>
+
+<body class="bg-gray-50 flex flex-col min-h-screen pt-16" x-data="{ mobileMenuOpen: false }">
+
+    <header class="glass text-white shadow-xl fixed w-full top-0 left-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/index.html" class="text-2xl font-bold tracking-tighter">Kawindu Prabod Subasinghe</a>
+            <nav class="hidden md:flex space-x-8 font-medium">
+                <a href="/index.html" class="hover:text-yellow-400 transition">Home</a>
+                <a href="/html/about.html" class="hover:text-yellow-400 transition">About</a>
+                <a href="/html/experience.html" class="hover:text-yellow-400 transition">Experience</a>
+                <a href="/html/projects.html" class="text-yellow-400 font-bold">Projects</a>
+                <a href="/html/contact.html" class="hover:text-yellow-400 transition">Contact</a>
+            </nav>
+            <button @click="mobileMenuOpen = !mobileMenuOpen" class="md:hidden p-2 focus:outline-none">
+                <svg x-show="!mobileMenuOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                <svg x-show="mobileMenuOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+        </div>
+    </header>
+
+    <div x-show="mobileMenuOpen" x-transition class="md:hidden fixed inset-0 z-40 pt-20 bg-blue-900 text-white flex flex-col items-center space-y-8 text-xl">
+        <a href="/index.html" @click="mobileMenuOpen = false">Home</a>
+        <a href="/html/about.html" @click="mobileMenuOpen = false">About</a>
+        <a href="/html/experience.html" @click="mobileMenuOpen = false">Experience</a>
+        <a href="/html/projects.html" @click="mobileMenuOpen = false">Projects</a>
+        <a href="/html/contact.html" @click="mobileMenuOpen = false">Contact</a>
+    </div>
+
+    <main class="flex-grow max-w-4xl mx-auto px-6 py-12">
+        <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden">
+            <div class="bg-indigo-50 py-16 flex justify-center items-center">
+                <i class="fas fa-wifi text-indigo-200 text-9xl"></i>
+            </div>
+            
+            <div class="p-8 md:p-12">
+                <div class="flex flex-wrap gap-3 mb-6">
+                    <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm font-bold">Android</span>
+                    <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-bold">Kotlin</span>
+                    <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm font-bold">Utility</span>
+                </div>
+
+                <h1 class="text-4xl font-bold text-gray-900 mb-6">WiFi Monitor</h1>
+                
+                <div class="prose max-w-none text-gray-600 leading-relaxed mb-8">
+                    <p class="text-lg mb-4">
+                        An Android application designed to monitor the device's WiFi connectivity state in real-time and alert the user via Toast notifications.
+                    </p>
+                    <p class="mb-4">
+                        I developed this application to solve a personal pain point: incurring unexpected mobile data charges when my home router would turn off during power cuts. The app provides immediate feedback when the WiFi connection drops, allowing users to disable mobile data or take other actions immediately.
+                    </p>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4 pt-6 border-t border-gray-100">
+                    <a href="https://github.com/Kawindu-Prabod/WiFi_Monitor" target="_blank" class="inline-flex justify-center items-center px-6 py-3 bg-gray-900 text-white font-bold rounded-xl hover:bg-black transition">
+                        <i class="fab fa-github mr-2"></i> View on GitHub
+                    </a>
+                    <a href="/html/projects.html" class="inline-flex justify-center items-center px-6 py-3 bg-gray-100 text-gray-700 font-bold rounded-xl hover:bg-gray-200 transition">
+                        <i class="fas fa-arrow-left mr-2"></i> Back to Projects
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-10 text-center">
+        <p class="text-gray-400">&copy; <span x-text="new Date().getFullYear()"></span> Kawindu Prabod. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

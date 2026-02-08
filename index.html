@@ -18,13 +18,14 @@
 
     <header class="glass text-white shadow-xl fixed w-full top-0 left-0 z-50">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold tracking-tighter">Kawindu Prabod Subasinghe</a>
+            <a href="/index.html" class="text-2xl font-bold tracking-tighter">Kawindu Prabod Subasinghe</a>
             
             <nav class="hidden md:flex space-x-8 font-medium">
-                <a href="index.html" class="text-yellow-400 font-bold">Home</a>
-                <a href="html/about.html" class="hover:text-yellow-400 transition">About</a>
-                <a href="html/projects.html" class="hover:text-yellow-400 transition">Projects</a>
-                <a href="html/contact.html" class="hover:text-yellow-400 transition">Contact</a>
+                <a href="/index.html" class="text-yellow-400 font-bold">Home</a>
+                <a href="/html/about.html" class="hover:text-yellow-400 transition">About</a>
+                <a href="/html/experience.html" class="hover:text-yellow-400 transition">Experience</a>
+                <a href="/html/projects.html" class="hover:text-yellow-400 transition">Projects</a>
+                <a href="/html/contact.html" class="hover:text-yellow-400 transition">Contact</a>
             </nav>
 
             <button @click="mobileMenuOpen = !mobileMenuOpen" class="md:hidden p-2 focus:outline-none">
@@ -40,10 +41,11 @@
          x-transition:leave="transition ease-in duration-150"
          class="md:hidden fixed inset-0 z-40 pt-20 bg-blue-900">
         <nav class="flex flex-col items-center space-y-8 text-xl text-white">
-            <a href="index.html" @click="mobileMenuOpen = false">Home</a>
-            <a href="html/about.html" @click="mobileMenuOpen = false">About</a>
-            <a href="html/projects.html" @click="mobileMenuOpen = false">Projects</a>
-            <a href="html/contact.html" @click="mobileMenuOpen = false">Contact</a>
+            <a href="/index.html" @click="mobileMenuOpen = false">Home</a>
+            <a href="/html/about.html" @click="mobileMenuOpen = false">About</a>
+            <a href="/html/experience.html" @click="mobileMenuOpen = false">Experience</a>
+            <a href="/html/projects.html" @click="mobileMenuOpen = false">Projects</a>
+            <a href="/html/contact.html" @click="mobileMenuOpen = false">Contact</a>
         </nav>
     </div>
 
@@ -57,8 +59,8 @@
                     Full-Stack Developer & Mobile Enthusiast. Crafting scalable web solutions and intelligent mobile experiences.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4">
-                    <a href="html/projects.html" class="px-8 py-4 bg-yellow-500 text-blue-900 font-bold rounded-full hover:bg-yellow-400 transform hover:-translate-y-1 transition shadow-lg">View My Work</a>
-                    <a href="html/contact.html" class="px-8 py-4 border-2 border-white font-bold rounded-full hover:bg-white hover:text-blue-900 transition">Get In Touch</a>
+                    <a href="/html/projects.html" class="px-8 py-4 bg-yellow-500 text-blue-900 font-bold rounded-full hover:bg-yellow-400 transform hover:-translate-y-1 transition shadow-lg">View My Work</a>
+                    <a href="/html/contact.html" class="px-8 py-4 border-2 border-white font-bold rounded-full hover:bg-white hover:text-blue-900 transition">Get In Touch</a>
                 </div>
             </div>
             <div class="md:w-2/5">
@@ -77,45 +79,45 @@
                     <h2 class="text-4xl font-bold text-gray-900">Featured Projects</h2>
                     <div class="h-1 w-20 bg-yellow-500 mt-2"></div>
                 </div>
-                <a href="html/projects.html" class="hidden md:block text-blue-600 font-semibold hover:text-blue-800 transition">See all projects &rarr;</a>
+                <a href="/html/projects.html" class="hidden md:block text-blue-600 font-semibold hover:text-blue-800 transition">See all projects &rarr;</a>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 
                 <div class="group bg-white rounded-2xl shadow-md hover:shadow-2xl transition duration-300 overflow-hidden border border-gray-100">
-                    <div class="h-48 bg-blue-50 flex items-center justify-center">
-                        <i class="fas fa-calendar-alt text-blue-200 text-5xl group-hover:scale-110 transition duration-500"></i>
+                    <div class="aspect-video bg-blue-50 flex items-center justify-center overflow-hidden">
+                        <i class="fas fa-calendar-check text-blue-200 text-6xl group-hover:scale-110 transition duration-500"></i>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2 group-hover:text-blue-600 transition">Reserve-Master</h3>
                         <p class="text-gray-600 mb-4 text-sm leading-relaxed">MERN-based reservation system with automated daily student notifications.</p>
-                        <a href="html/projects/project1.html" class="inline-flex items-center text-blue-600 font-bold text-sm hover:underline">
+                        <a href="/html/projects/project1.html" class="inline-flex items-center text-blue-600 font-bold text-sm hover:underline">
                             Details <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"></path></svg>
                         </a>
                     </div>
                 </div>
 
                 <div class="group bg-white rounded-2xl shadow-md hover:shadow-2xl transition duration-300 overflow-hidden border border-gray-100">
-                    <div class="h-48 bg-cyan-50 flex items-center justify-center">
-                        <i class="fas fa-file-alt text-cyan-200 text-5xl group-hover:scale-110 transition duration-500"></i>
+                    <div class="aspect-video bg-cyan-50 flex items-center justify-center overflow-hidden">
+                        <i class="fas fa-camera text-cyan-200 text-6xl group-hover:rotate-12 transition duration-500"></i>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2 group-hover:text-blue-600 transition">ImageToText AI</h3>
                         <p class="text-gray-600 mb-4 text-sm leading-relaxed">Android OCR application utilizing Google ML Kit for text recognition.</p>
-                        <a href="html/projects/project2.html" class="inline-flex items-center text-blue-600 font-bold text-sm hover:underline">
+                        <a href="/html/projects/project2.html" class="inline-flex items-center text-blue-600 font-bold text-sm hover:underline">
                             Details <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"></path></svg>
                         </a>
                     </div>
                 </div>
 
                 <div class="group bg-white rounded-2xl shadow-md hover:shadow-2xl transition duration-300 overflow-hidden border border-gray-100">
-                    <div class="h-48 bg-green-50 flex items-center justify-center">
-                        <i class="fas fa-newspaper text-green-200 text-5xl group-hover:scale-110 transition duration-500"></i>
+                    <div class="aspect-video bg-green-50 flex items-center justify-center overflow-hidden">
+                        <i class="fas fa-newspaper text-green-200 text-6xl group-hover:scale-110 transition duration-500"></i>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2 group-hover:text-blue-600 transition">E-Paper System</h3>
                         <p class="text-gray-600 mb-4 text-sm leading-relaxed">Laravel application featuring SMS OTP and PayHere payment integration.</p>
-                        <a href="html/projects/project3.html" class="inline-flex items-center text-blue-600 font-bold text-sm hover:underline">
+                        <a href="/html/projects/project3.html" class="inline-flex items-center text-blue-600 font-bold text-sm hover:underline">
                             Details <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"></path></svg>
                         </a>
                     </div>
@@ -127,7 +129,7 @@
 
     <footer class="bg-gray-900 text-white py-12 text-center mt-auto">
         <div class="max-w-6xl mx-auto px-6">
-            <p class="text-gray-400">&copy; 2026 Kawindu Prabod. All Rights Reserved.</p>
+            <p class="text-gray-400">&copy; <span x-text="new Date().getFullYear()"></span> Kawindu Prabod. All Rights Reserved.</p>
         </div>
     </footer>
 

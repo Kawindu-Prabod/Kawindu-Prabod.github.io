@@ -20,12 +20,13 @@
 
     <header class="glass text-white shadow-xl fixed w-full top-0 left-0 z-50">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="../index.html" class="text-2xl font-bold tracking-tighter">Kawindu Prabod Subasinghe</a>
+            <a href="/index.html" class="text-2xl font-bold tracking-tighter">Kawindu Prabod Subasinghe</a>
             <nav class="hidden md:flex space-x-8 font-medium">
-                <a href="../index.html" class="hover:text-yellow-400 transition">Home</a>
-                <a href="about.html" class="hover:text-yellow-400 transition">About</a>
-                <a href="projects.html" class="hover:text-yellow-400 transition">Projects</a>
-                <a href="contact.html" class="text-yellow-400 font-bold">Contact</a>
+                <a href="/index.html" class="hover:text-yellow-400 transition">Home</a>
+                <a href="/html/about.html" class="hover:text-yellow-400 transition">About</a>
+                <a href="/html/experience.html" class="hover:text-yellow-400 transition">Experience</a>
+                <a href="/html/projects.html" class="hover:text-yellow-400 transition">Projects</a>
+                <a href="/html/contact.html" class="text-yellow-400 font-bold">Contact</a>
             </nav>
             <button @click="mobileMenuOpen = !mobileMenuOpen" class="md:hidden p-2 focus:outline-none">
                 <svg x-show="!mobileMenuOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
@@ -35,10 +36,11 @@
     </header>
 
     <div x-show="mobileMenuOpen" x-transition class="md:hidden fixed inset-0 z-40 pt-20 bg-blue-900 text-white flex flex-col items-center space-y-8 text-xl">
-        <a href="../index.html" @click="mobileMenuOpen = false">Home</a>
-        <a href="about.html" @click="mobileMenuOpen = false">About</a>
-        <a href="projects.html" @click="mobileMenuOpen = false">Projects</a>
-        <a href="contact.html" @click="mobileMenuOpen = false">Contact</a>
+        <a href="/index.html" @click="mobileMenuOpen = false">Home</a>
+        <a href="/html/about.html" @click="mobileMenuOpen = false">About</a>
+        <a href="/html/experience.html" @click="mobileMenuOpen = false">Experience</a>
+        <a href="/html/projects.html" @click="mobileMenuOpen = false">Projects</a>
+        <a href="/html/contact.html" @click="mobileMenuOpen = false">Contact</a>
     </div>
 
     <section class="bg-blue-900 py-16 text-center text-white">
@@ -79,7 +81,7 @@
 
 
            <div class="lg:col-span-2">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdTQJAhRPaqBUG1K6IL3np4uVsaZdeVhnUw0-yqhrbnFZiV6A/viewform?embedded=true" width="640" height="640" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdTQJAhRPaqBUG1K6IL3np4uVsaZdeVhnUw0-yqhrbnFZiV6A/viewform?embedded=true" class="w-full rounded-xl shadow-sm border border-gray-100" height="640" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                 <!--  <form action="https://formspree.io/f/your-id-here" method="POST" class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 space-y-6">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>

@@ -26,12 +26,13 @@
 
     <header class="glass text-white shadow-xl fixed w-full top-0 left-0 z-50">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="../../index.html" class="text-2xl font-bold tracking-tighter">Kawindu Prabod Subasinghe</a>
+            <a href="/index.html" class="text-2xl font-bold tracking-tighter">Kawindu Prabod Subasinghe</a>
             <nav class="hidden md:flex space-x-8 font-medium">
-                <a href="../../index.html" @click="mobileMenuOpen = false">Home</a>
-                <a href="../about.html" @click="mobileMenuOpen = false">About</a>
-                <a href="../projects.html" @click="mobileMenuOpen = false">Projects</a>
-                <a href="../contact.html" @click="mobileMenuOpen = false">Contact</a>
+                <a href="/index.html" @click="mobileMenuOpen = false">Home</a>
+                <a href="/html/about.html" @click="mobileMenuOpen = false">About</a>
+                <a href="/html/experience.html" @click="mobileMenuOpen = false">Experience</a>
+                <a href="/html/projects.html" @click="mobileMenuOpen = false">Projects</a>
+                <a href="/html/contact.html" @click="mobileMenuOpen = false">Contact</a>
             </nav>
             <button @click="mobileMenuOpen = !mobileMenuOpen" class="md:hidden p-2 focus:outline-none">
                 <svg x-show="!mobileMenuOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -48,55 +49,59 @@
 
     <div x-show="mobileMenuOpen" x-transition
         class="md:hidden fixed inset-0 z-40 pt-20 bg-blue-900 text-white flex flex-col items-center space-y-8 text-xl">
-        <a href="../../index.html" @click="mobileMenuOpen = false">Home</a>
-        <a href="../about.html" @click="mobileMenuOpen = false">About</a>
-        <a href="../projects.html" @click="mobileMenuOpen = false">Projects</a>
-        <a href="../contact.html" @click="mobileMenuOpen = false">Contact</a>
+        <a href="/index.html" @click="mobileMenuOpen = false">Home</a>
+        <a href="/html/about.html" @click="mobileMenuOpen = false">About</a>
+        <a href="/html/experience.html" @click="mobileMenuOpen = false">Experience</a>
+        <a href="/html/projects.html" @click="mobileMenuOpen = false">Projects</a>
+        <a href="/html/contact.html" @click="mobileMenuOpen = false">Contact</a>
     </div>
 
-    <main class="max-w-4xl mx-auto px-6 py-20 flex-grow">
-        <a href="../projects.html" class="text-blue-600 font-semibold mb-8 inline-block hover:underline"><i
-                class="fas fa-arrow-left mr-2"></i> Back to Projects</a>
+    <main class="flex-grow max-w-4xl mx-auto px-6 py-12">
+        <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden">
+            <div class="bg-green-50 py-16 flex justify-center items-center">
+                <i class="fas fa-newspaper text-green-200 text-9xl"></i>
+            </div>
+            
+            <div class="p-8 md:p-12">
+                <div class="flex flex-wrap gap-3 mb-6">
+                    <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-bold">Laravel</span>
+                    <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-bold">Notify.lk SMS</span>
+                    <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-bold">PayHere API</span>
+                </div>
 
-        <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8">
-            <div>
-                <h1 class="text-4xl font-bold text-gray-900 mb-2">E-Paper CMS</h1>
-                <div class="flex flex-wrap gap-2">
-                    <span
-                        class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-bold uppercase">Laravel</span>
-                    <span
-                        class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-bold uppercase">Notify.lk
-                        SMS</span>
-                    <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-bold uppercase">PayHere
-                        API</span>
+                <h1 class="text-4xl font-bold text-gray-900 mb-6">E-Paper CMS</h1>
+                
+                <div class="prose max-w-none text-gray-600 leading-relaxed mb-8">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Project Overview</h2>
+                    <p class="text-lg mb-6">
+                        This is a specialized Content Management System for digital newspapers. It implements a "Freemium" model where the current day's edition is accessible, but archives and premium content require a manual subscription.
+                    </p>
+                    <p class="text-md mb-6 bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500 text-blue-800">
+                        <strong>Note:</strong> This project was developed during my internship at <strong>Maestro Innovative Solution (Pvt) Ltd</strong> under professional guidance.
+                    </p>
+
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Technical Highlights</h2>
+                    <ul class="list-disc pl-6 space-y-2 mb-4">
+                        <li><strong>Secure Registration:</strong> Implemented a 2-Factor Authentication style registration using Notify.lk to send OTPs to Sri Lankan phone numbers.</li>
+                        <li><strong>Payment Integration:</strong> Integrated the PayHere.lk gateway to handle secure subscription transactions.</li>
+                        <li><strong>Access Control:</strong> Developed custom Laravel middleware to restrict access to PDF/E-paper views based on the user's subscription status and the current date.</li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4 pt-6 border-t border-gray-100">
+                    <a href="https://github.com/Kawindu-Prabod/epaper_system" target="_blank" class="inline-flex justify-center items-center px-6 py-3 bg-gray-900 text-white font-bold rounded-xl hover:bg-black transition">
+                        <i class="fab fa-github mr-2"></i> View on GitHub
+                    </a>
+                    <a href="/html/projects.html" class="inline-flex justify-center items-center px-6 py-3 bg-gray-100 text-gray-700 font-bold rounded-xl hover:bg-gray-200 transition">
+                        <i class="fas fa-arrow-left mr-2"></i> Back to Projects
+                    </a>
                 </div>
             </div>
-            <a href="https://github.com/Kawindu-Prabod/epaper_system" target="_blank"
-                class="inline-flex items-center justify-center px-6 py-3 bg-gray-900 text-white font-bold rounded-xl hover:bg-blue-800 transition shadow-lg">
-                <i class="fab fa-github mr-2 text-xl"></i> View on GitHub
-            </a>
-        </div>
-
-        <div class="prose prose-lg text-gray-600 max-w-none">
-            <h2 class="text-2xl font-bold text-gray-800">Project Overview</h2>
-            <p>This is a specialized Content Management System for digital newspapers. It implements a "Freemium" model
-                where the current day's edition is accessible, but archives and premium content require a manual
-                subscription.</p>
-
-            <h2 class="text-2xl font-bold text-gray-800 mt-8">Technical Highlights</h2>
-            <ul class="list-disc pl-6 space-y-2">
-                <li><strong>Secure Registration:</strong> Implemented a 2-Factor Authentication style registration using
-                    Notify.lk to send OTPs to Sri Lankan phone numbers.</li>
-                <li><strong>Payment Integration:</strong> Integrated the PayHere.lk gateway to handle secure
-                    subscription transactions.</li>
-                <li><strong>Access Control:</strong> Developed custom Laravel middleware to restrict access to
-                    PDF/E-paper views based on the user's subscription status and the current date.</li>
-            </ul>
         </div>
     </main>
 
     <footer class="bg-gray-900 text-white py-10 text-center">
-        <p class="text-gray-400">&copy; 2026 Kawindu Prabod. All Rights Reserved.</p>
+        <p class="text-gray-400">&copy; <span x-text="new Date().getFullYear()"></span> Kawindu Prabod. All Rights Reserved.</p>
     </footer>
 
 </body>

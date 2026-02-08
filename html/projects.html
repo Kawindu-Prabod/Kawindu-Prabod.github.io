@@ -20,12 +20,13 @@
 
     <header class="glass text-white shadow-xl fixed w-full top-0 left-0 z-50">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="../index.html" class="text-2xl font-bold tracking-tighter">Kawindu Prabod Subasinghe</a>
+            <a href="/index.html" class="text-2xl font-bold tracking-tighter">Kawindu Prabod Subasinghe</a>
             <nav class="hidden md:flex space-x-8 font-medium">
-                <a href="../index.html" class="hover:text-yellow-400 transition">Home</a>
-                <a href="about.html" class="hover:text-yellow-400 transition">About</a>
-                <a href="projects.html" class="text-yellow-400 font-bold">Projects</a>
-                <a href="contact.html" class="hover:text-yellow-400 transition">Contact</a>
+                <a href="/index.html" class="hover:text-yellow-400 transition">Home</a>
+                <a href="/html/about.html" class="hover:text-yellow-400 transition">About</a>
+                <a href="/html/experience.html" class="hover:text-yellow-400 transition">Experience</a>
+                <a href="/html/projects.html" class="text-yellow-400 font-bold">Projects</a>
+                <a href="/html/contact.html" class="hover:text-yellow-400 transition">Contact</a>
             </nav>
             <button @click="mobileMenuOpen = !mobileMenuOpen" class="md:hidden p-2 focus:outline-none">
                 <svg x-show="!mobileMenuOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
@@ -35,10 +36,11 @@
     </header>
 
     <div x-show="mobileMenuOpen" x-transition class="md:hidden fixed inset-0 z-40 pt-20 bg-blue-900 text-white flex flex-col items-center space-y-8 text-xl">
-        <a href="../index.html" @click="mobileMenuOpen = false">Home</a>
-        <a href="about.html" @click="mobileMenuOpen = false">About</a>
-        <a href="projects.html" @click="mobileMenuOpen = false">Projects</a>
-        <a href="contact.html" @click="mobileMenuOpen = false">Contact</a>
+        <a href="/index.html" @click="mobileMenuOpen = false">Home</a>
+        <a href="/html/about.html" @click="mobileMenuOpen = false">About</a>
+        <a href="/html/experience.html" @click="mobileMenuOpen = false">Experience</a>
+        <a href="/html/projects.html" @click="mobileMenuOpen = false">Projects</a>
+        <a href="/html/contact.html" @click="mobileMenuOpen = false">Contact</a>
     </div>
 
     <section class="bg-white py-16 border-b border-gray-100">
@@ -62,7 +64,7 @@
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 mb-2">Reserve-Master</h3>
                     <p class="text-gray-600 text-sm mb-6 leading-relaxed">A centralized hall reservation system with automated email notifications for students and faculty.</p>
-                    <a href="projects/project1.html" class="block text-center py-3 bg-gray-50 text-gray-900 font-semibold rounded-xl hover:bg-blue-900 hover:text-white transition">View Project Details</a>
+                    <a href="/html/projects/project1.html" class="block text-center py-3 bg-gray-50 text-gray-900 font-semibold rounded-xl hover:bg-blue-900 hover:text-white transition">View Project Details</a>
                 </div>
             </div>
 
@@ -77,7 +79,7 @@
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 mb-2">ImageToText AI</h3>
                     <p class="text-gray-600 text-sm mb-6 leading-relaxed">OCR mobile application using Google ML Kit to extract text from camera feeds and gallery images.</p>
-                    <a href="projects/project2.html" class="block text-center py-3 bg-gray-50 text-gray-900 font-semibold rounded-xl hover:bg-blue-900 hover:text-white transition">View Project Details</a>
+                    <a href="/html/projects/project2.html" class="block text-center py-3 bg-gray-50 text-gray-900 font-semibold rounded-xl hover:bg-blue-900 hover:text-white transition">View Project Details</a>
                 </div>
             </div>
 
@@ -92,7 +94,22 @@
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 mb-2">E-Paper CMS</h3>
                     <p class="text-gray-600 text-sm mb-6 leading-relaxed">Subscription-based digital newspaper platform integrated with SMS OTP and PayHere payment gateway.</p>
-                    <a href="projects/project3.html" class="block text-center py-3 bg-gray-50 text-gray-900 font-semibold rounded-xl hover:bg-blue-900 hover:text-white transition">View Project Details</a>
+                    <a href="/html/projects/project3.html" class="block text-center py-3 bg-gray-50 text-gray-900 font-semibold rounded-xl hover:bg-blue-900 hover:text-white transition">View Project Details</a>
+                </div>
+            </div>
+
+            <div class="group bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition duration-300">
+                <div class="aspect-video bg-indigo-50 flex items-center justify-center overflow-hidden">
+                    <i class="fas fa-wifi text-indigo-200 text-6xl group-hover:scale-110 transition duration-500"></i>
+                </div>
+                <div class="p-6">
+                    <div class="flex gap-2 mb-3">
+                        <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-1 bg-indigo-100 text-indigo-700 rounded">Android</span>
+                        <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-1 bg-orange-100 text-orange-700 rounded">Utility</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">WiFi Monitor</h3>
+                    <p class="text-gray-600 text-sm mb-6 leading-relaxed">Android application that monitors WiFi connectivity state and alerts users via Toast notifications to prevent accidental mobile data usage.</p>
+                    <a href="/html/projects/project4.html" class="block text-center py-3 bg-gray-50 text-gray-900 font-semibold rounded-xl hover:bg-blue-900 hover:text-white transition">View Project Details</a>
                 </div>
             </div>
 
