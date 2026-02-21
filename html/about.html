@@ -19,7 +19,7 @@
 <body class="bg-gray-50 flex flex-col min-h-screen pt-16" x-data="{ mobileMenuOpen: false }">
 
     <header class="glass text-white shadow-xl fixed w-full top-0 left-0 z-50">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="max-w-6xl mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
             <a href="/index.html" class="text-2xl font-bold tracking-tighter">Kawindu Prabod Subasinghe</a>
             <nav class="hidden md:flex space-x-8 font-medium">
                 <a href="/index.html" class="hover:text-yellow-400 transition">Home</a>
@@ -44,23 +44,23 @@
     </div>
 
     <main class="flex-grow">
-        <section class="py-20 px-6">
+        <section class="py-12 md:py-20 px-4 md:px-6">
             <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-4xl font-bold text-gray-900 mb-6">About Me</h2>
-                <div class="h-1.5 w-20 bg-yellow-500 mx-auto mb-10 rounded-full"></div>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">About Me</h2>
+                <div class="h-1.5 w-20 bg-yellow-500 mx-auto mb-8 md:mb-10 rounded-full"></div>
                 
-                <p class="text-xl text-gray-700 leading-relaxed mb-6">
+                <p class="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
                     I'm <span class="font-bold text-blue-900">Kawindu Prabod</span>, a Network Engineering specialist student at the 
                     <span class="border-b-2 border-blue-200">University of Sri Jayewardenepura</span>.
                 </p>
-                <p class="text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
+                <p class="text-base md:text-lg text-gray-600 leading-relaxed max-w-2xl mx-auto">
                     Currently pursuing a BICT (Hons), I focus on building secure, scalable network infrastructures. 
                     I bridge the gap between complex system administration and real-world technology applications.
                 </p>
             </div>
         </section>
 
-        <section class="bg-white py-16 px-6 border-y border-gray-100">
+        <section class="bg-white py-12 md:py-16 px-4 md:px-6 border-y border-gray-100">
     <div class="max-w-6xl mx-auto text-center">
         <h3 class="text-2xl font-bold text-gray-800 mb-8">Technical Proficiency</h3>
         <div class="flex flex-wrap justify-center gap-4">
@@ -77,13 +77,13 @@
     </div>
 </section>
 
-        <section class="py-20 px-6 bg-gray-50">
+        <section class="py-12 md:py-20 px-4 md:px-6 bg-gray-50">
             <div class="max-w-5xl mx-auto">
-                <h2 class="text-3xl font-bold text-gray-900 mb-12 flex items-center">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-8 md:mb-12 flex items-center">
                     <i class="fas fa-certificate text-yellow-500 mr-4"></i> Professional Certifications
                 </h2>
                 
-               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
     <div class="group bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md transition">
         <div>
             <div class="w-14 h-14 mb-4 flex items-center justify-center text-blue-900 bg-blue-50 rounded-xl group-hover:bg-blue-900 group-hover:text-white transition">
@@ -142,12 +142,26 @@
 
     <div class="group bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md transition">
         <div>
-            <div class="w-14 h-14 mb-4 flex items-center justify-center text-blue-900 bg-blue-50 rounded-xl group-hover:bg-blue-900 group-hover:text-white transition">
+            <div class="w-14 h-14 mb-4 flex items-center justify-center text-purple-900 bg-purple-50 rounded-xl group-hover:bg-purple-900 group-hover:text-white transition">
                 <i class="fas fa-terminal fa-lg"></i>
             </div>
             <h3 class="text-lg font-bold text-gray-900 leading-tight mb-1">Linux Security Basics</h3>
             <p class="text-gray-500 text-sm mb-2">Udemy</p>
-            <span class="text-xs font-bold text-blue-600 uppercase tracking-widest block mb-4">Nov 2024</span>
+            <span class="text-xs font-bold text-purple-600 uppercase tracking-widest block mb-4">Nov 2024</span>
+        </div>
+        <a href="https://www.linkedin.com/in/kawindu-subasinghe/details/certifications/" target="_blank" class="w-full inline-flex items-center justify-center px-4 py-2.5 bg-[#0077b5] text-white rounded-xl hover:bg-blue-800 transition font-medium text-sm">
+            Verify <i class="fab fa-linkedin ml-2"></i>
+        </a>
+    </div>
+
+    <div class="group bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md transition">
+        <div>
+            <div class="w-14 h-14 mb-4 flex items-center justify-center text-red-900 bg-red-50 rounded-xl group-hover:bg-red-900 group-hover:text-white transition">
+                <i class="fas fa-shield-alt fa-lg"></i>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 leading-tight mb-1">Pre Security</h3>
+            <p class="text-gray-500 text-sm mb-2">TryHackMe</p>
+            <span class="text-xs font-bold text-red-600 uppercase tracking-widest block mb-4">JAN 2026</span>
         </div>
         <a href="https://www.linkedin.com/in/kawindu-subasinghe/details/certifications/" target="_blank" class="w-full inline-flex items-center justify-center px-4 py-2.5 bg-[#0077b5] text-white rounded-xl hover:bg-blue-800 transition font-medium text-sm">
             Verify <i class="fab fa-linkedin ml-2"></i>
